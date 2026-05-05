@@ -82,13 +82,14 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
 .nav-inner {
   max-width: 1200px; margin: 0 auto; padding: 0 24px;
   display: flex; align-items: center; justify-content: space-between;
-  height: 72px;
+  height: 85px;
 }
 .nav-logo {
   font-family: 'DM Serif Display', serif;
   font-size: 1.6rem; color: var(--teal);
   text-decoration: none; display: flex; align-items: center; gap: 8px;
 }
+.nav-logo img { height: 64px; }
 .nav-logo svg { width: 32px; height: 32px; }
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
 .nav-links a {
@@ -753,7 +754,7 @@ footer p { font-size: 0.88rem; line-height: 1.6; max-width: 300px; }
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <img src="logo.svg" alt="VerusPets" style="height:48px;">
+      <img src="logo.svg" alt="VerusPets">
     </a>
     <ul class="nav-links">
       <li><a href="#coverage">Coverage</a></li>
