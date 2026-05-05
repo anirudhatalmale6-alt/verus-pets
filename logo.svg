@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" width="280" height="70">
+  <g transform="translate(5, 3) scale(0.62)">
+    <ellipse cx="52" cy="85" rx="30" ry="22" fill="#F5F0EB"/>
+    <path d="M32 70 Q52 60 72 70 Q72 85 52 90 Q32 85 32 70Z" fill="#8B4513"/>
+    <path d="M38 75 Q52 68 66 75 Q66 83 52 86 Q38 83 38 75Z" fill="#D2691E"/>
+    <ellipse cx="52" cy="88" rx="14" ry="12" fill="#F5F0EB"/>
+    <circle cx="52" cy="45" r="24" fill="#F5F0EB"/>
+    <path d="M28 40 Q35 25 52 22 Q52 45 28 45Z" fill="#8B4513"/>
+    <path d="M76 40 Q69 25 52 22 Q52 45 76 45Z" fill="#8B4513"/>
+    <path d="M46 22 Q52 20 58 22 L56 42 Q52 44 48 42Z" fill="#F5F0EB"/>
+    <ellipse cx="30" cy="38" rx="10" ry="14" fill="#8B4513" transform="rotate(-15, 30, 38)"/>
+    <ellipse cx="74" cy="38" rx="10" ry="14" fill="#8B4513" transform="rotate(15, 74, 38)"/>
+    <circle cx="42" cy="43" r="4.5" fill="#2D1B0E"/>
+    <circle cx="62" cy="43" r="4.5" fill="#2D1B0E"/>
+    <circle cx="43.5" cy="41.5" r="1.5" fill="white"/>
+    <circle cx="63.5" cy="41.5" r="1.5" fill="white"/>
+    <ellipse cx="52" cy="54" rx="5" ry="3.5" fill="#2D1B0E"/>
+    <ellipse cx="52" cy="53" rx="2" ry="1" fill="#5a3a1a"/>
+    <path d="M48 57 Q52 62 56 57" fill="none" stroke="#2D1B0E" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="36" cy="102" rx="8" ry="5" fill="#F5F0EB"/>
+    <circle cx="32" cy="101" r="2" fill="#E8C4B8"/>
+    <circle cx="36" cy="99" r="2" fill="#E8C4B8"/>
+    <circle cx="40" cy="101" r="2" fill="#E8C4B8"/>
+    <g transform="rotate(-30, 75, 70)">
+      <path d="M68 65 Q72 50 78 48" fill="none" stroke="#F5F0EB" stroke-width="10" stroke-linecap="round"/>
+      <ellipse cx="80" cy="46" rx="8" ry="6" fill="#F5F0EB" transform="rotate(-20, 80, 46)"/>
+      <circle cx="76" cy="43" r="2" fill="#E8C4B8"/>
+      <circle cx="80" cy="41" r="2" fill="#E8C4B8"/>
+      <circle cx="84" cy="43" r="2" fill="#E8C4B8"/>
+      <ellipse cx="80" cy="48" rx="3" ry="2.5" fill="#E8C4B8"/>
+    </g>
+    <path d="M35 80 Q40 75 45 80 Q45 90 40 92 Q35 90 35 80Z" fill="#D2691E" opacity="0.6"/>
+    <path d="M60 78 Q65 73 70 78 Q70 88 65 90 Q60 88 60 78Z" fill="#D2691E" opacity="0.6"/>
+  </g>
+  <text x="78" y="35" font-family="'DM Serif Display', Georgia, serif" font-size="30" fill="#0A7E8C" font-weight="400" letter-spacing="-0.5">
+    <tspan fill="#0A7E8C">Verus</tspan><tspan fill="#E8734A">Pets</tspan>
+  </text>
+  <text x="80" y="52" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10" fill="#6B7B8D" font-weight="500" letter-spacing="2.5">INSURANCE THAT PAYS</text>
+</svg>
