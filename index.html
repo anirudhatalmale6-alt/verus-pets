@@ -294,6 +294,26 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
 .step-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
 .step-card p { font-size: 0.92rem; color: var(--gray); line-height: 1.6; }
 
+/* ═══════════════════ PET PHOTO STRIPS ═══════════════════ */
+.pet-photos {
+  padding: 40px 0; overflow: hidden;
+}
+.pet-photos-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+.pet-photo {
+  border-radius: var(--radius-sm); overflow: hidden;
+  aspect-ratio: 1; position: relative;
+}
+.pet-photo img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.4s;
+}
+.pet-photo:hover img { transform: scale(1.05); }
+@media (max-width: 600px) {
+  .pet-photos-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ═══════════════════ COVERAGE ═══════════════════ */
 .coverage {
   padding: 100px 0;
@@ -852,6 +872,18 @@ footer p { font-size: 0.88rem; line-height: 1.6; max-width: 300px; }
   </div>
 </section>
 
+<!-- PET PHOTOS STRIP 1 -->
+<div class="pet-photos">
+  <div class="container">
+    <div class="pet-photos-grid">
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop&crop=face" alt="Happy golden retriever" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop&crop=face" alt="Orange tabby cat" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=400&fit=crop&crop=face" alt="Dalmatian puppy" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=400&fit=crop&crop=face" alt="Grey cat looking up" loading="lazy"></div>
+    </div>
+  </div>
+</div>
+
 <!-- COVERAGE -->
 <section class="coverage reveal" id="coverage">
   <div class="container">
@@ -931,6 +963,18 @@ footer p { font-size: 0.88rem; line-height: 1.6; max-width: 300px; }
     </div>
   </div>
 </section>
+
+<!-- PET PHOTOS STRIP 2 -->
+<div class="pet-photos">
+  <div class="container">
+    <div class="pet-photos-grid">
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=400&fit=crop&crop=face" alt="Two dogs running on beach" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=400&h=400&fit=crop&crop=face" alt="White cat with blue eyes" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop&crop=face" alt="Corgi puppy smiling" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=400&h=400&fit=crop&crop=face" alt="Ginger cat close-up" loading="lazy"></div>
+    </div>
+  </div>
+</div>
 
 <!-- QUOTE FORM -->
 <section class="quote-section" id="quote">
@@ -1167,6 +1211,18 @@ footer p { font-size: 0.88rem; line-height: 1.6; max-width: 300px; }
     </div>
   </div>
 </section>
+
+<!-- PET PHOTOS STRIP 3 -->
+<div class="pet-photos">
+  <div class="container">
+    <div class="pet-photos-grid">
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?w=400&h=400&fit=crop&crop=face" alt="Labrador retriever portrait" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=400&h=400&fit=crop&crop=face" alt="Calico cat on blanket" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?w=400&h=400&fit=crop&crop=face" alt="Beagle puppy eyes" loading="lazy"></div>
+      <div class="pet-photo"><img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=400&h=400&fit=crop&crop=face" alt="Persian cat relaxing" loading="lazy"></div>
+    </div>
+  </div>
+</div>
 
 <!-- FAQ -->
 <section class="faq reveal" id="faq">
