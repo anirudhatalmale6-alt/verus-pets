@@ -361,6 +361,93 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
 .coverage-list svg { width: 18px; height: 18px; color: var(--teal); flex-shrink: 0; }
 .coverage-card .btn-primary { width: 100%; justify-content: center; }
 
+/* ═══════════════════ CLAIM EXAMPLES ═══════════════════ */
+.claim-examples { padding: 100px 0; background: var(--white); }
+.claims-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px;
+}
+.claim-card {
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow-md); background: var(--white);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.claim-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.claim-card-img {
+  height: 200px; position: relative; overflow: hidden;
+}
+.claim-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.claim-card-body { padding: 24px; }
+.claim-card-pet { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.claim-card-avatar {
+  width: 40px; height: 40px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
+}
+.claim-card-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.claim-card-name { font-weight: 600; font-size: 0.95rem; }
+.claim-card-breed { font-size: 0.8rem; color: var(--gray); }
+.claim-card-desc { font-size: 0.88rem; color: var(--gray); margin-bottom: 16px; line-height: 1.5; }
+.claim-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 0; border-top: 1px solid rgba(10,126,140,0.08);
+  font-size: 0.9rem;
+}
+.claim-row-label { color: var(--gray); display: flex; align-items: center; gap: 6px; }
+.claim-row-value { font-weight: 700; }
+.claim-row-value.covered { color: var(--teal); font-size: 1.1rem; }
+@media (max-width: 768px) {
+  .claims-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+}
+
+/* ═══════════════════ COST COMPARISON ═══════════════════ */
+.cost-compare {
+  padding: 100px 0;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--teal-light) 50%, var(--cream) 100%);
+}
+.cost-compare-intro {
+  max-width: 640px; margin: 0 auto 48px; text-align: center;
+  font-size: 1.05rem; color: var(--gray); line-height: 1.7;
+}
+.cost-compare-stat {
+  font-weight: 700; color: var(--navy); font-size: 1.1rem;
+}
+.cost-table {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.cost-item {
+  background: var(--white); border-radius: var(--radius); padding: 32px 24px;
+  text-align: center; box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(10,126,140,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cost-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.cost-item-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.cost-item h4 { font-size: 1rem; margin-bottom: 20px; color: var(--navy); }
+.cost-prices { display: flex; flex-direction: column; gap: 12px; }
+.cost-without {
+  font-size: 1.3rem; color: #D44; font-weight: 700; text-decoration: line-through;
+  opacity: 0.7;
+}
+.cost-with {
+  font-size: 1.6rem; color: var(--teal); font-weight: 700;
+  font-family: 'DM Serif Display', serif;
+}
+.cost-label {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1.5px;
+  font-weight: 600; margin-bottom: 4px;
+}
+.cost-label.red { color: #D44; }
+.cost-label.green { color: var(--teal); }
+.cost-savings {
+  margin-top: 12px; font-size: 0.82rem; color: var(--white);
+  background: var(--teal); padding: 4px 14px; border-radius: 50px;
+  display: inline-block; font-weight: 600;
+}
+@media (max-width: 900px) {
+  .cost-table { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .cost-table { grid-template-columns: 1fr; max-width: 300px; margin: 0 auto; }
+}
+
 /* ═══════════════════ WHY VERUS ═══════════════════ */
 .why-verus { padding: 100px 0; }
 .benefits-grid {
@@ -919,6 +1006,165 @@ footer p { font-size: 0.88rem; line-height: 1.6; max-width: 300px; }
         </ul>
         <a href="#quote" class="btn-primary" style="background:var(--teal);box-shadow:0 4px 16px rgba(10,126,140,0.3);">Add Wellness</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- REAL CLAIM EXAMPLES -->
+<section class="claim-examples reveal">
+  <div class="container">
+    <div class="section-label">Real Claims</div>
+    <h2 class="section-title">See What VerusPets Covers</h2>
+    <p class="section-subtitle">Real scenarios showing how much pet parents save with coverage.</p>
+    <div class="claims-grid">
+      <div class="claim-card">
+        <div class="claim-card-img">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500&h=300&fit=crop&crop=face" alt="Golden Retriever" loading="lazy">
+        </div>
+        <div class="claim-card-body">
+          <div class="claim-card-pet">
+            <div class="claim-card-avatar"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=80&h=80&fit=crop&crop=face" alt="Luna"></div>
+            <div>
+              <div class="claim-card-name">Luna's ACL Surgery</div>
+              <div class="claim-card-breed">Golden Retriever, 4 yrs</div>
+            </div>
+          </div>
+          <p class="claim-card-desc">Luna tore her ACL during a game of fetch. Emergency surgery and 6 weeks of rehab.</p>
+          <div class="claim-row">
+            <span class="claim-row-label">Invoice Amount</span>
+            <span class="claim-row-value">$4,800</span>
+          </div>
+          <div class="claim-row">
+            <span class="claim-row-label">VerusPets Covered</span>
+            <span class="claim-row-value covered">$4,320*</span>
+          </div>
+        </div>
+      </div>
+      <div class="claim-card">
+        <div class="claim-card-img">
+          <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=500&h=300&fit=crop&crop=face" alt="White Cat" loading="lazy">
+        </div>
+        <div class="claim-card-body">
+          <div class="claim-card-pet">
+            <div class="claim-card-avatar"><img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=80&h=80&fit=crop&crop=face" alt="Oliver"></div>
+            <div>
+              <div class="claim-card-name">Oliver's Bladder Stones</div>
+              <div class="claim-card-breed">Domestic Shorthair, 6 yrs</div>
+            </div>
+          </div>
+          <p class="claim-card-desc">Oliver needed emergency surgery to remove bladder stones, plus follow-up diagnostics and medication.</p>
+          <div class="claim-row">
+            <span class="claim-row-label">Invoice Amount</span>
+            <span class="claim-row-value">$2,100</span>
+          </div>
+          <div class="claim-row">
+            <span class="claim-row-label">VerusPets Covered</span>
+            <span class="claim-row-value covered">$1,890*</span>
+          </div>
+        </div>
+      </div>
+      <div class="claim-card">
+        <div class="claim-card-img">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500&h=300&fit=crop&crop=face" alt="Dalmatian" loading="lazy">
+        </div>
+        <div class="claim-card-body">
+          <div class="claim-card-pet">
+            <div class="claim-card-avatar"><img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=80&h=80&fit=crop&crop=face" alt="Buddy"></div>
+            <div>
+              <div class="claim-card-name">Buddy's Cancer Treatment</div>
+              <div class="claim-card-breed">Dalmatian, 8 yrs</div>
+            </div>
+          </div>
+          <p class="claim-card-desc">Buddy was diagnosed with lymphoma. Chemotherapy, blood work, and ongoing monitoring over 4 months.</p>
+          <div class="claim-row">
+            <span class="claim-row-label">Invoice Amount</span>
+            <span class="claim-row-value">$6,500</span>
+          </div>
+          <div class="claim-row">
+            <span class="claim-row-label">VerusPets Covered</span>
+            <span class="claim-row-value covered">$5,850*</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:20px; font-size:0.78rem; color:var(--gray);">*Based on 90% reimbursement rate after deductible. Actual coverage varies by plan selected.</p>
+  </div>
+</section>
+
+<!-- IS PET INSURANCE WORTH IT? -->
+<section class="cost-compare reveal">
+  <div class="container">
+    <div class="section-label">Cost Savings</div>
+    <h2 class="section-title">Is Pet Insurance Really Worth It?</h2>
+    <div class="cost-compare-intro">
+      <p>We know you'll do whatever it takes to take care of your pet. We also want to take care of your wallet.</p>
+      <p style="margin-top:12px;"><span class="cost-compare-stat">36% of dog owners</span> reported they would spend $4,000 or more out-of-pocket on life-saving medical care for their pets.</p>
+    </div>
+    <div class="cost-table">
+      <div class="cost-item">
+        <div class="cost-item-icon">&#129463;</div>
+        <h4>Broken Bone Repair</h4>
+        <div class="cost-prices">
+          <div>
+            <div class="cost-label red">Without Insurance</div>
+            <div class="cost-without">$2,776</div>
+          </div>
+          <div>
+            <div class="cost-label green">With VerusPets</div>
+            <div class="cost-with">$368*</div>
+          </div>
+          <span class="cost-savings">Save $2,408</span>
+        </div>
+      </div>
+      <div class="cost-item">
+        <div class="cost-item-icon">&#128137;</div>
+        <h4>Dental Cleaning</h4>
+        <div class="cost-prices">
+          <div>
+            <div class="cost-label red">Without Insurance</div>
+            <div class="cost-without">$280</div>
+          </div>
+          <div>
+            <div class="cost-label green">With VerusPets</div>
+            <div class="cost-with">$118*</div>
+          </div>
+          <span class="cost-savings">Save $162</span>
+        </div>
+      </div>
+      <div class="cost-item">
+        <div class="cost-item-icon">&#127973;</div>
+        <h4>Emergency Surgery</h4>
+        <div class="cost-prices">
+          <div>
+            <div class="cost-label red">Without Insurance</div>
+            <div class="cost-without">$4,800</div>
+          </div>
+          <div>
+            <div class="cost-label green">With VerusPets</div>
+            <div class="cost-with">$580*</div>
+          </div>
+          <span class="cost-savings">Save $4,220</span>
+        </div>
+      </div>
+      <div class="cost-item">
+        <div class="cost-item-icon">&#128138;</div>
+        <h4>Cancer Treatment</h4>
+        <div class="cost-prices">
+          <div>
+            <div class="cost-label red">Without Insurance</div>
+            <div class="cost-without">$6,500</div>
+          </div>
+          <div>
+            <div class="cost-label green">With VerusPets</div>
+            <div class="cost-with">$750*</div>
+          </div>
+          <span class="cost-savings">Save $5,750</span>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:24px; font-size:0.78rem; color:var(--gray);">*Estimated out-of-pocket with 90% reimbursement after $250 annual deductible. Costs vary by plan, breed, and location.</p>
+    <div style="text-align:center; margin-top:36px;">
+      <a href="#quote" class="btn-primary">Get Your Free Quote &rarr;</a>
     </div>
   </div>
 </section>
